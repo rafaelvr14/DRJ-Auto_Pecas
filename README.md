@@ -16,9 +16,9 @@ Back-end --> Django
 
 # Instalação
 
-A instalação do Python é feita através de um instalador, facilmente encontrado no site do próprio Python.
-A instalação do MySQL é feita através de um instalador, encontrado no site do MySQL.
-A instalação do Django é feita através de um instalador, encontrado no site do próprio DjangoProject. É necessário possuir o Python e um banco de dados(no caso, MySQL) instalados.
+* A instalação do Python é feita através de um instalador, facilmente encontrado no site do próprio Python.
+* A instalação do MySQL é feita através de um instalador, encontrado no site do MySQL.
+* A instalação do Django é feita através de um instalador, encontrado no site do próprio DjangoProject. É necessário possuir o Python e um banco de dados(no caso, MySQL) instalados.
 
 # Requisitos
 
