@@ -1,0 +1,3 @@
+- Definir apenas um requisito por vez(evitar uso do conectivo 'e')
+- Evitar requisitos que tenham um nome maior que 100 caracteres
+- Transformar requisitos de usuário em requisitos de software
