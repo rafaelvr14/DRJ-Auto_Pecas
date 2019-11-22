@@ -30,7 +30,10 @@ Todos os commits devem seguir o formato:
     Alterando <nome do arquivo, função ou documento>
     Adicionando <nome do arquivo, função ou documento>
     Removendo <nome do arquivo, função ou documento>
-
+    Atualizando <nome do arquivo, função ou documento>
+Em casos em que muitos arquivos serem comitados de uma única vez, commitar juntos apenas os arquivos que fazem referência a mesma função/assunto, como por exemplo:
+    
+    Adicionando arquivos do banco de dados
 
 # Suporte
 Para perguntas e sugestões entre em contato com nossos colabordores:  
@@ -41,4 +44,4 @@ Para perguntas e sugestões entre em contato com nossos colabordores:
 
 # Status do Projeto
 
-O projeto esta em sua fase inicial, no momento esta sendo feito o analise de requisitos e a estruturação base do projeto.
+O projeto esta em sua fase de desenvolvimento inicial, com as telas do Front-End sendo feitas e o Back-End tendo seu banco de dados construído.
