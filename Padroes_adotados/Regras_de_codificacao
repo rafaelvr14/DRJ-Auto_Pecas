@@ -1,0 +1,6 @@
+1 - Todos os arquivos de código devem ter identação de tamanho 4.
+2 - Todos os arquivos de código devem ter identação no formato de espaços.
+3 - Os apps do Django devem ser criados com o nome especificado no diagrama de classes.
+4 - Os arquivos que são criados pelo Django devem ter seus comenátiros padrões mantidos.
+5 - Arquivos HTML não devem conter códigos javascript criados dentro deles, ou seja, todos os scripts devem ser criados em arquivos separados e importados no <head>.
+6 - As variáveis devem ter nomes intuitivos.
