@@ -17,14 +17,20 @@ Back-end --> Django
 # Instalação
 
 * A instalação do Python é feita através de um instalador, facilmente encontrado no site do próprio Python.
-* A instalação do MySQL é feita através de um instalador, encontrado no site do MySQL.
-* A instalação do Django é feita através de um instalador, encontrado no site do próprio DjangoProject. É necessário possuir o Python e um banco de dados(no caso, MySQL) instalados.
+* É necessário que seja feita a instalação do pip, o instalador de pacotes do Python. Para isso, é necessário fazer download do arquivo <b>get-pip.py</b>. A instalação dele é feita através da linha de código, com o comando <i>python get-pip.py</i> estando na pasta em que o arquivo se encontra.
+* A instalação do Django é feita através do pip, com o comando <b>pip install django</b>.
 
 # Requisitos
 
-Acesso a internet, Python 3, MySQL
+Acesso a internet, Python 3
 
 # Modo de Uso
+Todos os commits devem seguir o formato:
+    
+    Alterando <nome do arquivo, função ou documento>
+    Adicionando <nome do arquivo, função ou documento>
+    Removendo <nome do arquivo, função ou documento>
+
 
 # Suporte
 Para perguntas e sugestões entre em contato com nossos colabordores:  
