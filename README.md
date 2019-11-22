@@ -25,6 +25,12 @@ Back-end --> Django
 Acesso a internet, Python 3, MySQL
 
 # Modo de Uso
+Todos os commits devem seguir o formato:
+    
+    Alterando <nome do arquivo, função ou documento>
+    Adicionando <nome do arquivo, função ou documento>
+    Removendo <nome do arquivo, função ou documento>
+
 
 # Suporte
 Para perguntas e sugestões entre em contato com nossos colabordores:  
