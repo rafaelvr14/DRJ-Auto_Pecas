@@ -30,7 +30,10 @@ Todos os commits devem seguir o formato:
     Alterando <nome do arquivo, função ou documento>
     Adicionando <nome do arquivo, função ou documento>
     Removendo <nome do arquivo, função ou documento>
-
+    Atualizando <nome do arquivo, função ou documento>
+Em casos em que muitos arquivos serem comitados de uma única vez, commitar juntos apenas os arquivos que fazem referência a mesma função/assunto, como por exemplo:
+    
+    Adicionando arquivos do banco de dados
 
 # Suporte
 Para perguntas e sugestões entre em contato com nossos colabordores:  
