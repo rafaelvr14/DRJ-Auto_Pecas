@@ -8,12 +8,13 @@
         <script lang="javascript" src="../_javascript/funcoes.js"></script>
     </head>
     <body>
+        <h1>CADASTRO</h1>
         <form action="../index.html">
             <input type="text" placeholder="Nome da empresa:" required checked><br><br>
-            <input type="text" placeholder="CNPJ:" required checked><br><br>
-            <input type="text" placeholder="CEP:" required checked><br><br>
+            <input type="text" placeholder="CNPJ:" required checked pattern="[0-9]{14}"><br><br>
+            <input type="text" placeholder="CEP:" required checked pattern="[0-9]{5}-[0-9]{3}"><br><br>
             <input type="text" placeholder="Endereço:" required checked><br><br>
-            <input type="text" placeholder="Telefone:" required checked><br><br>
+            <input type="text" placeholder="Telefone:" required checked pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"><br><br>
             <input type="reset" value="LIMPAR">
             <input type="submit" value="CADASTRAR">
         </form>

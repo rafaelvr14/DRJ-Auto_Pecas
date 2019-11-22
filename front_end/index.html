@@ -8,16 +8,24 @@
         <script lang="javascript" src="../_javascript/funcoes.js"></script>
     </head>
     <body>
-        <div>
-                <h1>LOGIN</h1>
-                <form>
-                <input type="email" placeholder="E-mail" required checked><br><br>
-                <input type="password" placeholder="Senha" required checked><br><br>
-                <h2><a href="_paginas/verificadorCliente.html">Não tem conta?Crie aqui.</a></h2>
-                <h3><a href="_paginas/Admin_login.html">ADMIN</a></h3>
-                <input type="reset" value="LIMPAR">
-                <input type="submit" value="ENVIAR">
-                </form>
+        <div id="Login">
+            <div id="bloco_dentro">
+            <div id="bloco_fora">
+            <h1 id="LOGIN">LOGIN</h1>
+            <form>
+            <div>    
+            <input type="email" placeholder="E-mail" required checked id="E_mail_"><br><br>
+            </div>
+            <div>
+            <input type="password" placeholder="Senha" required checked id="Senha_"><br><br>
+            </div>
+            <h2 id="N_o_tem_conta__Crie_aqui_"><a href="_paginas/verificadorCliente.html">Não tem conta?Crie aqui.</a></h2>
+            <h3 id="ADMIN"><a href="_paginas/Admin_login.html">ADMIN</a></h3>
+            <input type="reset" value="LIMPAR" id="LIMPAR">
+            <input type="submit" value="ENVIAR" id="ENTRAR">
+            </form>
+        </div>
+        </div>
         </div>
     </body>
 </html>
