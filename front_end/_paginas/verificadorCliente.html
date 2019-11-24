@@ -4,19 +4,21 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../_css/estilo.css" rel="stylesheet">
+        <link href="../_css/verificadorCliente.css" rel="stylesheet">
         <script lang="javascript" src="../_javascript/funcoes.js"></script>
     </head>
     <body>
-        <div>
-            <h1>O senhor gostaria de ser um cliente fixo?</h1>
-            <form action="registro.html">
-                <input type="submit" value="NÃO">
-            </form>
+        <div id="verificador">
+            <div id="bloco_dentro">
             <br>
-            <form action="registro_clienteFixo.html">
-                <input type="submit" value="SIM">
+            <span id="titulo1">O senhor gostaria de ser um cliente fixo?</span><br><br>
+            <form action="registro.html">
+                <input type="submit" value="NÃO" id="fixo_nao">
             </form>
+            <form action="registro_clienteFixo.html">
+                <input type="submit" value="SIM" id="fixo_sim">
+            </form><br><br>
+            </div>
         </div>
     </body>
 </html>
