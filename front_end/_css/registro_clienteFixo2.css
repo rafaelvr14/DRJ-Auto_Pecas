@@ -1,0 +1,197 @@
+@charset "UTF=8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #555;
+    margin: 0;
+}
+
+#bloco_dentro{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(5, 5, 5, 0.59);
+    margin-top: 10%;
+    box-sizing: border-box;
+    border: 0px solid #000;
+    width: 40%;
+    filter: drop-shadow(10px 10px 10px rgba(10, 10, 10, 0.59));
+    
+}
+#registro {
+    padding: 0;
+    display: block;
+    background-size: contain;
+    background: url(../_imagens/pecas_automovel_A0_Rectangle_2_pattern@2x.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+.E_mail_:focus{
+    border-bottom: 0.5px solid #555;
+    outline: 0;
+}
+.E_mail_:hover{
+    border-bottom: 1.5px solid #555;
+}
+.E_mail_ {
+    transition-duration: 0.4s;
+    color: rgb(128, 128, 128);
+    background-color: rgba(5, 5, 5, 0);
+    border: none;
+    overflow: hidden;
+    width: 15vw;
+    height: 33px;
+    text-align: left;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+#Senha_:focus{
+    border-bottom: 0.5px solid #555;
+    outline: 0;
+}
+#Senha_:hover{
+    border-bottom: 1.5px solid #555;
+}
+#Senha_ {
+    text-align: center;
+    color: rgb(128, 128, 128);
+    transition-duration: 0.4s;
+    border: none;
+    overflow: hidden;
+    width: 212px;
+    height: 33px;
+    text-align: left;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: rgba(112,112,112,0);
+}
+#LOGIN {
+    margin: auto;
+    overflow: hidden;
+    width: 244px;
+    height: 47px;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(184,184,184,1);
+}
+
+
+#LIMPAR:hover{
+	 background-color: rgba(184,184,184,1);
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+#LIMPAR:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+#LIMPAR {
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+}
+#ENTRAR:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+#ENTRAR:hover{
+	 background-color: rgba(184,184,184,1);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+#ENTRAR {
+    border: none;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+}
+
+#N_o_tem_conta__Crie_aqui_:hover a{
+    color: #ffffff;
+}
+#N_o_tem_conta__Crie_aqui_ a{
+    transition: 0.4s;
+    margin: auto;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    
+}
+#ADMIN:hover a{
+    color: #ffffff;
+}
+#ADMIN a{
+    transition: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+}

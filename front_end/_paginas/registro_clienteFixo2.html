@@ -4,19 +4,24 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../_css/estilo.css" rel="stylesheet">
+        <link href="../_css/registro_clienteFixo2.css" rel="stylesheet">
         <script lang="javascript" src="../_javascript/funcoes.js"></script>
     </head>
     <body>
-        <h1>CADASTRO</h1>
+    <div id="registro">
+        <div id="bloco_dentro">
+        <span id="LOGIN">CADASTRO</span>
+        <br><br>
         <form action="../index.html">
-            <input type="text" placeholder="Nome da empresa:" required checked><br><br>
-            <input type="text" placeholder="CNPJ:" required checked pattern="[0-9]{14}"><br><br>
-            <input type="text" placeholder="CEP:" required checked pattern="[0-9]{5}-[0-9]{3}"><br><br>
-            <input type="text" placeholder="Endereço:" required checked><br><br>
-            <input type="text" placeholder="Telefone:" required checked pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"><br><br>
-            <input type="reset" value="LIMPAR">
-            <input type="submit" value="CADASTRAR">
+            <input type="text" placeholder="Nome da empresa:" required checked class="E_mail_"><br><br>
+            <input type="text" placeholder="CNPJ:" required checked pattern="[0-9]{14}" class="E_mail_"><br><br>
+            <input type="text" placeholder="CEP:" required checked pattern="[0-9]{5}-[0-9]{3}" class="E_mail_"><br><br>
+            <input type="text" placeholder="Endereço:" required checked class="E_mail_"><br><br>
+            <input type="text" placeholder="Telefone:" required checked pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" class="E_mail_"><br><br>
+            <input type="reset" value="LIMPAR" id="LIMPAR">
+            <input type="submit" value="CADASTRAR" id="ENTRAR"><br><br>
         </form>
+        </div>
+    </div>
     </body>
 </html>
