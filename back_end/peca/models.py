@@ -21,4 +21,5 @@ class PecaCarrinho(models.Model):
 class Carrinho(models.Model):
     pecas = models.ManyToManyField('PecaCarrinho')
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+    realizado = models.BooleanField(default=False)
     total = models.DecimalField(max_digits=10,decimal_places=2)
