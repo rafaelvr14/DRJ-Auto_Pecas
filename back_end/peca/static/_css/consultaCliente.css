@@ -1,0 +1,176 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#carrinho{
+    display: inline-block;
+    width: 5.2vw;
+}
+#carrinho{
+    border: none;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+    background-color: rgb(122, 122, 122);
+}
+#carrinho:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+#carrinho:hover{
+	background-color: rgba(184,184,184,1);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+#bloco_geral{
+    padding: 0;
+    background: url(../_imagens/Caminho\ 3@2x.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-background-size: 230vh 56vw;
+    -moz-background-size: 230vh 56vw;
+    background-size: 230vh 56vw;
+    -o-background-size: 230vh 56vw;
+}
+#ferramenta_chave{
+    background-image: url(../_imagens/Grupo14.png);
+    width: 36vw;
+    height: 38vh;
+    background-size: 38vw 41vh;
+}
+
+.finalizar{
+    border: none;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+    background-color: rgb(122, 122, 122);
+}
+.finalizar:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+.finalizar:hover{
+	background-color: rgba(184,184,184,1);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+#retorno{
+    width: 0;
+    height: 15vh;
+    margin-bottom: 95vh;
+    margin-right: 45vw;
+}
+#logar{
+    position: static;
+    margin-bottom: 46vw;
+    margin-right: 12vw;
+    width: 0vw;
+}
+#cadastrar{
+    margin-bottom: 46vw;
+    margin-right: 24vw;
+    width: 0vw;
+}
+#CADASTRAR{
+    border: none;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 14vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+    background-color: rgb(122, 122, 122);
+}
+#CADASTRAR:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+#CADASTRAR:hover{
+	background-color: rgba(184,184,184,1);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+#LOGAR{
+    border: none;
+    border-radius: 5px;
+    opacity: 0.59;
+    overflow: hidden;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(10,10,10,1);
+    background-color: rgb(122, 122, 122);
+}
+#LOGAR:active{
+    box-shadow: 0px 0px 25px 0 rgba(151, 151, 151, 0.5);
+}
+#LOGAR:hover{
+	background-color: rgba(184,184,184,1);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+    font-family: Sitka Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}

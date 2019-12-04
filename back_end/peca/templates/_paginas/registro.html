@@ -1,0 +1,27 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "_css/registro.css" %}" rel="stylesheet">
+        <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
+    </head>
+    <body>
+        <div id="registro">
+        <div id="bloco_dentro">
+        <h1 id="LOGIN">Cadastro</h1><br>
+        <form action="{%url 'logado'%}">
+            <input type="text" placeholder="Login:" required checked="login" class="E_mail_"><br><br>
+            <input type="password" placeholder="Senha:" required checked id="password" class="E_mail_"><br><br>
+            <input type="password" placeholder="Senha novamente:" required checked id="confirm_password" onkeyup="validacao()" class="E_mail_"><br><br>
+            <input type="email" placeholder="E-mail:" required class="E_mail_"><br><br>
+            <input type="reset" value="LIMPAR" id="LIMPAR">
+            <input type="submit" value="ENVIAR" id="ENTRAR"><br><br>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static "_css/Main.css" %}" rel="stylesheet">
+        <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
+    </head>
+    <body>
+    <div id="bloco_geral">
+    <div id="retorno"><a href="{% url 'index' %}"><div id="ferramenta_chave"></div></a></div>
+    <div id="logar"><form action="{% url 'login' %}"><input type="submit" value="LOGAR" id="LOGAR"></form></div>
+    <div id="cadastrar"><form action="{% url 'verificacao' %}"><input type="submit" value="CADASTRAR" id="CADASTRAR"></form></div>
+    </div>
+    </body>
+</html>
