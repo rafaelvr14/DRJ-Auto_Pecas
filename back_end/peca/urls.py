@@ -18,5 +18,9 @@ urlpatterns = [
     path('repositorio/',repositorio_view,name='repositorio'),
     path('descontos/',desconto_view,name='descontos'),
     path('adicionar-peca/',adiciona_peca_view,name='addpeca'),
-    path('adiciona-desconto/',adiciona_desconto_view,name='adddscnt')
+    path('adiciona-desconto/',adiciona_desconto_view,name='adddscnt'),
+    path('altera-desconto/',altera_desconto_view,name='altdscnt'),
+    path('altera-peca/',altera_peca_view,name='altpeca'),
+    path('altera-avulso/',altera_avulso_view,name='altavulso'),
+    path('altera-fixo/',altera_fixo_view,name='altfixo'),
 ]

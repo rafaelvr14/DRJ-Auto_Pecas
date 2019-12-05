@@ -49,3 +49,16 @@ def adiciona_peca_view(request):
 
 def adiciona_desconto_view(request):
     return render(request,"_paginas/adicionarDesconto.html")
+
+def altera_desconto_view(request):
+    return render(request,"_paginas/atualizarDesconto.html")
+
+def altera_peca_view(request):
+    return render(request,"_paginas/atualizarPeca.html")
+
+def altera_avulso_view(request):
+    return render(request,"_paginas/atualizarClienteAvulso.html")
+
+def altera_fixo_view(request):
+    return render(request,"_paginas/atualizarClienteFixo.html")
+

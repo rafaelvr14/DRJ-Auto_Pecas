@@ -1,21 +1,22 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../_css/registro_clienteFixo.css" rel="stylesheet">
-        <script lang="javascript" src="../_javascript/funcoes.js"></script>
+        <link href="{% static "_css/registro_clienteFixo.css" %}" rel="stylesheet">
+        <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
     </head>
     <body>
     <div id="registro">
         <div id="bloco_dentro">
         <span id="LOGIN">ATUALIZAR</span>
-        <form action="repositorio.html">
+        <form action="{%url 'repositorio'%}">
             <input type="text" placeholder="Novo nome:" required checked class="E_mail_"><br><br>
             <input type="text" placeholder="Novo valor:" required checked class="E_mail_"><br><br>
             <input type="number" placeholder="Quantidade em estoque:" required checked class="E_mail_"><br><br>
-            <input type="File" value="Foto:" required checked  class="E_mail_"><br><br>
             <input type="reset" value="LIMPAR" id="LIMPAR">
             <input type="submit" value="ATUALIZAR" id="ATUALIZAR"><br><br>
         </form>

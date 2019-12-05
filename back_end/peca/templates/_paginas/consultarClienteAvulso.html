@@ -13,7 +13,7 @@
     <div id="bloco_geral">
     <div id="retorno"><a href="{%url 'consulta-avulso' %}"><div id="ferramenta_chave"></div></a></div>
     <form action="{%url 'consulta-fixo' %}"><input type="submit" value="Clientes fixos" class="finalizar"></form>
-    <form action="atualizarClienteAvulso.html"><input type="submit" value="Atualizar Clientes" class="finalizar"></form>
+    <form action="{%url 'altavulso' %}"><input type="submit" value="Atualizar Clientes" class="finalizar"></form>
     <div id="logar"><form action="{% url 'index' %}"><input type="submit" value="DESLOGAR" id="LOGAR"></form></div>
     <div id="cadastrar"><form action="{% url 'repositorio' %}"><input type="submit" value="REPOSITÓRIO" id="CADASTRAR"></form></div>
     </div>
