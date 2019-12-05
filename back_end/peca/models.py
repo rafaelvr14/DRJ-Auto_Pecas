@@ -17,6 +17,7 @@ class DescontoPeca(models.Model):
 class PecaCarrinho(models.Model):
     peca = models.ForeignKey('Peca',on_delete=models.CASCADE)
     qtde = models.PositiveIntegerField()
+    
 
 class Carrinho(models.Model):
     pecas = models.ManyToManyField('PecaCarrinho')
