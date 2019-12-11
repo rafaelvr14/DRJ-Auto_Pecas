@@ -65,9 +65,3 @@ def altera_avulso_view(request):
 
 def altera_fixo_view(request):
     return render(request,"_paginas/atualizarClienteFixo.html")
-
-def exibir_pecas(request):
-    context = {
-        'pecas' : Peca.objects.all()
-    }
-    return render(request)
