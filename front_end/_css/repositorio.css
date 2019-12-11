@@ -79,7 +79,13 @@ body{
     position: static;
     padding-right: 2vw;
     margin-bottom: 44vw;
-    margin-right: 28vw;
+    margin-right: 14vw;
+    width: 0vw;
+}
+#descontosPage{
+    position: static;
+    margin-bottom: 44vw;
+    margin-right: 16vw;
     width: 0vw;
 }
 #cadastrar{
