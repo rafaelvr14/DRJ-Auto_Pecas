@@ -65,14 +65,14 @@ body{
 
 .finalizar{
     text-align: center;
-    width: 38vw;
+    width: 20vw;
     height: 20vh;
 }
 #retorno{
     width: 0;
     height: 15vh;
     margin-bottom: 95vh;
-    margin-right: 8vw;
+    margin-right: 34vw;
 }
 #logar{
     display: flex;
