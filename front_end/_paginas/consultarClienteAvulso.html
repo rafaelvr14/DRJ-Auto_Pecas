@@ -10,8 +10,18 @@
     <body>
     <div id="bloco_geral">
     <div id="retorno"><a href="consultarClienteAvulso.html"><div id="ferramenta_chave"></div></a></div>
-    <form action="consultarClienteFixo.html"><input type="submit" value="Clientes fixos" class="finalizar"></form>
-    <form action="atualizarClienteAvulso.html"><input type="submit" value="Atualizar Clientes" class="finalizar"></form>
+    <table class="tabela">
+        <tr>
+          <th>Clientes</th>
+          <th>Opções</th>
+        </tr>
+        <tr>
+          <td>Rafael</td>
+          <td><form action="consultarClienteAvulso.html"><input type="submit" value="Excluir" class=""></form>
+            <form action="atualizarClienteAvulso.html"><input type="submit" value="Atualizar Cliente"></form>
+        </td>
+      </table><br><br>
+    <div id="consulta"><form action="consultarClienteFixo.html"><input type="submit" value="Clientes fixos" class="finalizar"></form></div>   
     <div id="logar"><form action="../index.html"><input type="submit" value="DESLOGAR" id="LOGAR"></form></div>
     <div id="cadastrar"><form action="repositorio.html"><input type="submit" value="REPOSITÓRIO" id="CADASTRAR"></form></div>
     </div>
