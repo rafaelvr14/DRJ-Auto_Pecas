@@ -6,9 +6,11 @@ from django.contrib.auth.models import User
 class Cliente(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     comum = models.BooleanField()
+    email = models.EmailField()
 
 class ClienteFixo(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    email = models.EmailField()
     empresa = models.CharField(max_length = 50)
     cnpj = models.CharField(max_length = 14)
     cep = models.CharField(max_length = 9)

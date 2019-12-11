@@ -12,7 +12,10 @@
     <body>
     <div id="bloco_geral">
     <div id="retorno"><a href="{%url 'logado'%}"><div id="ferramenta_chave"></div></a></div>
-    <form action="{%url 'carrinho'%}"><input type="submit" value="Carrinho" id="carrinho"></form>
+    {% for peca in pecas%}
+        <div><h5>{{peca.nome}}  {{peca.preco}}</h5></div>
+        <form action="{%url 'carrinho'%}"><input type="submit" value="Carrinho" id="carrinho"></form>
+    {% endfor %}
     <div id="cadastrar"><form action="{%url 'index'%}"><input type="submit" value="DESLOGAR" id="CADASTRAR"></form></div>
     </div>
     </body>

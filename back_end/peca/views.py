@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Peca
 
 # Create your views here.
 
@@ -11,8 +12,11 @@ def login_view(request):
 def verifica_view(request):
     return render(request, "_paginas/verificadorCliente.html")
 
-def logado_view(request):
-    return render(request, "_paginas/logado.html")
+def logado_view(request):#Pagina principal do cliente
+    context = {
+        'pecas' : Peca.objects.all()
+    }
+    return render(request, "_paginas/logado.html", context)
 
 def admin_login_view(request):
     return render(request, "_paginas/Admin_login.html")
@@ -61,4 +65,3 @@ def altera_avulso_view(request):
 
 def altera_fixo_view(request):
     return render(request,"_paginas/atualizarClienteFixo.html")
-
