@@ -13,11 +13,11 @@
     <div id="registro">
         <div id="bloco_dentro">
         <span id="LOGIN">ATUALIZAR</span>
-        <form action="{%url 'repositorio'%}">
-            <input type="text" placeholder="Novo nome:" required checked class="E_mail_"><br><br>
-            <input type="text" placeholder="Novo valor:" required checked class="E_mail_"><br><br>
-            <input type="number" placeholder="Quantidade em estoque:" required checked class="E_mail_"><br><br>
-            <input type="reset" value="LIMPAR" id="LIMPAR">
+        <form method=POST>
+            {% csrf_token %}
+            <input type="text" name="nome" placeholder="Novo nome:" required checked class="E_mail_"><br><br>
+            <input type="text" name="preco" placeholder="Novo valor:" required checked class="E_mail_"><br><br>
+            <input type="number" name="estoque" placeholder="Quantidade em estoque:" required checked class="E_mail_"><br><br>
             <input type="submit" value="ATUALIZAR" id="ATUALIZAR"><br><br>
         </form>
         </div>

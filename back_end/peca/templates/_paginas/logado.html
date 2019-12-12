@@ -10,13 +10,22 @@
         <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
     </head>
     <body>
-    <div id="bloco_geral">
-    <div id="retorno"><a href="{%url 'logado'%}"><div id="ferramenta_chave"></div></a></div>
-    {% for peca in pecas%}
-        <div><h5>{{peca.nome}}  {{peca.preco}}</h5></div>
-        <form action="{%url 'carrinho'%}"><input type="submit" value="Carrinho" id="carrinho"></form>
-    {% endfor %}
-    <div id="cadastrar"><form action="{%url 'index'%}"><input type="submit" value="DESLOGAR" id="CADASTRAR"></form></div>
-    </div>
+        <div id="bloco_geral">
+        <div id="retorno"><a href="{%url 'logado'%}"><div id="ferramenta_chave"></div></a></div>
+        <table>
+            <tr>
+                <th>Produtos</th>
+                <th>Opções</th>
+            </tr>
+            {%for peca in pecas%}
+            <tr>
+                <td>{{peca.nome}}</td>
+                <td><form action="/addcart/{{peca.id}}/"><input type="submit" value="Adicionar" class=""></form>
+            </td>
+            {%endfor%}
+            </table><br><br>
+        <div id="logar"><form action="{%url 'carrinho'%}"><input type="submit" value="CARRINHO" class="CADASTRAR"></form></div>
+        <div id="cadastrar"><form action="{%url 'index'%}"><input type="submit" value="DESLOGAR" class="CADASTRAR"></form></div>
+        </div>
     </body>
 </html>
