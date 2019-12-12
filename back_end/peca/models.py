@@ -17,9 +17,13 @@ class DescontoPeca(models.Model):
 class PecaCarrinho(models.Model):
     peca = models.ForeignKey('Peca',on_delete=models.CASCADE)
     qtde = models.PositiveIntegerField()
+    carrinho = models.ForeignKey('Carrinho',on_delete=models.CASCADE)
     
 class Carrinho(models.Model):
-    pecas = models.ManyToManyField('PecaCarrinho')
     #user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
-    realizado = models.BooleanField(default=False)
-    total = models.DecimalField(max_digits=10,decimal_places=2)
+    total = models.DecimalField(max_digits=10,decimal_places=2, default=0)
+
+class Pedido(models.Model):
+    valor = models.DecimalField(max_digits=10,decimal_places=2, default=0)
+    desconto = models.BooleanField(default=False)
+    data = models.DateTimeField()
