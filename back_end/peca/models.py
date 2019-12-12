@@ -7,6 +7,15 @@ class Peca(models.Model):
     preco = models.DecimalField(max_digits=6,decimal_places=2)
     estoque = models.PositiveIntegerField()
 
+    def getNome(self):
+        return self.nome
+
+    def disponivel(self, quantidade):
+        if quantidade > 0:
+            return True
+        else:
+            return False
+
 class Desconto(models.Model):
     valor = models.DecimalField(max_digits=4,decimal_places=2)
 
