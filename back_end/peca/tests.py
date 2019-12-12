@@ -11,5 +11,5 @@ class PecaTest(unittest.TestCase):
         self.assertFalse(self.teste.disponivel(0))
 
     def testNome(self):
-        self.teste = Peca.objects.create(nome="Carburador",preco=449.90,estoque=2)
+        self.teste = Peca.objects.create(nome="Embreagem",preco=449.90,estoque=2)
         self.assertEquals(self.teste.getNome(),"Roda")
