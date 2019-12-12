@@ -45,3 +45,4 @@ Para perguntas e sugestões entre em contato com nossos colabordores:
 # Status do Projeto
 
 O projeto esta em sua fase de desenvolvimento inicial, com as telas do Front-End sendo feitas e o Back-End tendo seu banco de dados construído.
+
