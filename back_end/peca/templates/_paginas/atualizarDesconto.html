@@ -10,15 +10,16 @@
         <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
     </head>
     <body>
-    <div id="registro">
-        <div id="bloco_dentro">
-        <span id="LOGIN">CADASTRAR</span>
-        <form action="{%url 'descontos'%}">
-            <input type="text" placeholder="Atualizar para:" required class="E_mail_"><br><br>
-            <input type="reset" value="LIMPAR" id="LIMPAR">
-            <input type="submit" value="ATUALIZAR" id="ATUALIZAR"><br><br>
-        </form>
+        <div id="registro">
+            <div id="bloco_dentro">
+            <span id="LOGIN">ATUALIZAR</span>
+            <form method=POST>
+                {%csrf_token%}
+                <input type="text" name="valor" placeholder="Atualizar para:" required class="E_mail_"><br><br>
+                <input type="reset" value="LIMPAR" id="LIMPAR">
+                <input type="submit" value="ATUALIZAR" id="ATUALIZAR"><br><br>
+            </form>
+            </div>
         </div>
-    </div>
     </body>
 </html>

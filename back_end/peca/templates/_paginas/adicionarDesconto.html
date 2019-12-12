@@ -1,18 +1,21 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../_css/registro_clienteFixo.css" rel="stylesheet">
-        <script lang="javascript" src="../_javascript/funcoes.js"></script>
+        <link href="{% static "_css/registro_clienteFixo.css" %}" rel="stylesheet">
+        <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
     </head>
     <body>
     <div id="registro">
         <div id="bloco_dentro">
         <span id="LOGIN">CADASTRAR</span>
-        <form action="descontos.html">
-            <input type="text" placeholder="Valor do desconto:" required class="E_mail_"><br><br>
+        <form method=POST>
+            {%csrf_token%}
+            <input type="text" name="valor" placeholder="Valor do desconto:" required class="E_mail_"><br><br>
             <input type="reset" value="LIMPAR" id="LIMPAR">
             <input type="submit" value="CADASTRAR" id="ATUALIZAR"><br><br>
         </form>

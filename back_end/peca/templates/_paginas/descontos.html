@@ -10,12 +10,24 @@
         <script lang="javascript" src="{% static "_javascript/funcoes.js" %}"></script>
     </head>
     <body>
-    <div id="bloco_geral">
-    <div id="retorno"><a href="{%url 'consulta-avulso'%}"><div id="ferramenta_chave"></div></a></div>
-    <form action="{%url 'descontos'%}"><input type="submit" value="Excluir" class="finalizar"></form>
-    <form action="{%url 'altdscnt' %}"><input type="submit" value="Atualizar desconto" class="finalizar"></form>
-    <form action="{%url 'adddscnt' %}"><input type="submit" value="Adicionar desconto" class="finalizar"></form>
-    <div id="logar"><form action="{%url 'index' %}"><input type="submit" value="DESLOGAR" id="LOGAR"></form></div>
-    </div>
+        <div id="bloco_geral">
+        <div id="retorno"><a href="{%url 'consulta-avulso'%}"><div id="ferramenta_chave"></div></a></div>
+        <table>
+            <tr>
+                <th>Descontos</th>
+                <th>Opções</th>
+            </tr>
+            {%for dp in dps%}
+            <tr>
+                <td>{{dp.peca.nome}}</td>
+                <td>
+                <form action="/rem-desc/{{dp.desconto.id}}"><input type="submit" value="Excluir" ></form>
+                <form action="/altera-desconto/{{dp.desconto.id}}/"><input type="submit" value="Atualizar desconto" ></form>
+            </td>
+            {%endfor%}
+            </table>
+        <div id="logar"><form action="{%url 'index' %}"><input type="submit" value="DESLOGAR" class="REPOSITORIO"></form>
+            <form action="{%url 'repositorio' %}"><input type="submit" value="REPOSITÓRIO" class="REPOSITORIO"></form></div>
+        </div>
     </body>
 </html>
