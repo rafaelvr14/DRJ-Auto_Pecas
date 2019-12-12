@@ -199,3 +199,4 @@ def limpador(request, desc):
     PecaCarrinho.objects.all().delete()
     pedido.save()
     return redirect('logado')
+    
