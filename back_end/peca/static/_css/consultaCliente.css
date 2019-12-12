@@ -63,11 +63,12 @@ body{
     background-size: 38vw 41vh;
 }
 
+
+
 .finalizar{
     border: none;
     border-radius: 5px;
     opacity: 0.59;
-    overflow: hidden;
     width: 15vw;
     height: 5vh;
     text-align: center;
@@ -75,7 +76,6 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    margin-right: 1vw;
     color: rgba(10,10,10,1);
     background-color: rgb(122, 122, 122);
 }
@@ -103,12 +103,19 @@ body{
 }
 #logar{
     position: static;
-    margin-bottom: 46vw;
+    margin-bottom: 44vw;
     margin-right: 12vw;
     width: 0vw;
 }
+#consulta{
+    position: static;
+    margin-bottom: 44vw;
+    margin-right: 18vw;
+    width: 0vw;
+}
+
 #cadastrar{
-    margin-bottom: 46vw;
+    margin-bottom: 44vw;
     margin-right: 24vw;
     width: 0vw;
 }
